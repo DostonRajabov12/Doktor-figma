@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <div class="max-w-7xl mx-auto py-6">
+        <!-- Header -->
+        <header class="flex justify-between items-center bg-blue-100 px-6 py-4 rounded-lg shadow">
+          <div>
+            <h1 class="text-lg font-bold text-gray-800">Астафьева Евгения Валерьевна</h1>
+            <p class="text-sm text-gray-600">Врач-хирург, флеболог в Санкт-Петербурге</p>
+          </div>
+          <div class="text-sm text-gray-600 flex flex-col items-end">
+            <span> Время работы: с 9:00 до 20:00</span>
+            <a href="mailto:mail@doctor.ru" class="text-blue-500 hover:underline"> mail@doctor.ru</a>
+            <span> Запись на приём: +7 (800) 000-00-00</span>
+          </div>
+        </header>
     
+        <!-- Navigation Menu -->
+        <nav class="mt-6 bg-white rounded-lg shadow">
+          <ul class="flex space-x-6 text-gray-700 font-medium px-6 py-3">
+            <li class="hover:text-blue-600"><a href="#">Обо мне</a></li>
+            <li class="relative group hover:text-blue-600">
+              <a href="#">Услуги и цены</a>
+              <!-- Dropdown Menu -->
+              <div class="absolute left-0 top-full hidden group-hover:block bg-white border rounded-lg shadow-lg mt-2 z-10">
+                <ul class="py-2 w-56">
+                  <li class="relative group">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Консультации флеболога</a>
+                    <!-- Submenu -->
+                    <div class="absolute left-full top-0 hidden group-hover:block bg-white border rounded-lg shadow-lg ml-2 z-10">
+                      <ul class="py-2 w-56">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Первичный приём с УЗИ</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Первичный приём</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Повторный приём</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Лазерная коагуляция вен</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Минифлебэктомия</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Склеротерапия вен под УЗИ</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover:text-blue-600"><a href="#">Лечение</a></li>
+            <li class="hover:text-blue-600"><a href="#">Пациентам</a></li>
+            <li class="hover:text-blue-600"><a href="#">Отзывы</a></li>
+            <li class="hover:text-blue-600"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
 </body>
 </html>
