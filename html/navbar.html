@@ -1,54 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body class="bg-gray-50">
     <div class="max-w-7xl mx-auto py-6">
-        <header class="flex justify-between items-center bg-blue-100 px-6 py-4 rounded-lg shadow">
-          <div>
-            <h1 class="text-lg font-bold text-gray-800">Астафьева Евгения Валерьевна</h1>
-            <p class="text-sm text-gray-600">Врач-хирург, флеболог в Санкт-Петербурге</p>
-          </div>
-          <div class="text-sm text-gray-600 flex flex-col items-end">
-            <span> Время работы: с 9:00 до 20:00</span>
-            <a href="mailto:mail@doctor.ru" class="text-blue-500 hover:underline"> mail@doctor.ru</a>
-            <span> Запись на приём: +7 (800) 000-00-00</span>
-          </div>
-        </header>
-    
-        <nav class="mt-6 bg-white rounded-lg shadow">
-          <ul class="flex space-x-6 text-gray-700 font-medium px-6 py-3">
-            <li class="hover:text-blue-600"><a href="#">Обо мне</a></li>
-            <li class="relative group hover:text-blue-600">
-              <a href="#">Услуги и цены</a>
-              <div class="absolute left-0 top-full hidden group-hover:block bg-white border rounded-lg shadow-lg mt-2 z-10">
-                <ul class="py-2 w-56">
-                  <li class="relative group">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Консультации флеболога</a>
-                    <div class="absolute left-full top-0 hidden group-hover:block bg-white border rounded-lg shadow-lg ml-2 z-10">
-                      <ul class="py-2 w-56">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Первичный приём с УЗИ</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Первичный приём</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Повторный приём</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Лазерная коагуляция вен</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Минифлебэктомия</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Склеротерапия вен под УЗИ</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="hover:text-blue-600"><a href="#">Лечение</a></li>
-            <li class="hover:text-blue-600"><a href="#">Пациентам</a></li>
-            <li class="hover:text-blue-600"><a href="#">Отзывы</a></li>
-            <li class="hover:text-blue-600"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-</body>
+      <!-- Header -->
+      <header
+        class="flex flex-col md:flex-row justify-between items-center bg-blue-100 px-6 py-4 rounded-lg shadow space-y-4 md:space-y-0"
+      >
+        <div class="text-center md:text-left">
+          <h1 class="text-lg font-bold text-gray-800">
+            Астафьева Евгения Валерьевна
+          </h1>
+        </div>
+        <div
+          class="text-sm text-gray-600 flex flex-col md:flex-row md:items-center md:justify-between md:gap-12 text-center"
+        >
+          <span>Время работы: с 9:00 до 20:00</span>
+          <a href="mailto:mail@doctor.ru" class="text-blue-500 hover:underline">
+            mail@doctor.ru</a
+          >
+          <span>Запись на приём: +7 (800) 000-00-00</span>
+        </div>
+      </header>
+
+      <!-- Navigation Menu -->
+      <nav
+        class="mt-6 bg-white rounded-lg shadow left-10 justify-between items-center flex flex-col lg:flex-row"
+      >
+        <a href="#" class="text-w-900 px-6 py-4 font-bold">Главная</a>
+        <ul class="flex flex-col lg:flex-row lg:space-x-6 text-gray-700 font-medium px-6 py-3 space-y-3 lg:space-y-0">
+          <li class="hover:text-blue-600"><a href="#">Обо мне</a></li>
+          <li class="relative group hover:text-blue-600">
+            <a href="#">Услуги и цены</a>
+            <div
+              class="absolute left-0 top-full hidden group-hover:block bg-white border rounded-lg shadow-lg mt-2 z-10 w-48"
+            >
+              <ul class="text-gray-700">
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Лазерная коагуляция вен
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Минифлебэктомия
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Склеротерапия вен под УЗИ
+                </li>
+                <li class="relative group">
+                  <span
+                    class="block hover:bg-gray-200 px-4 py-2 cursor-pointer"
+                    >Первичный прием</span
+                  >
+                  <div
+                    class="absolute hidden group-hover:block bg-white border rounded shadow-lg mt-1 left-full top-0"
+                  >
+                    <ul>
+                      <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                        Первичный прием с УЗИ
+                      </li>
+                      <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                        Повторный прием
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group hover:text-blue-600">
+            <a href="#">Лечение</a>
+            <div
+              class="absolute left-0 top-full hidden group-hover:block bg-white border rounded-lg shadow-lg mt-2 z-10 w-48"
+            >
+              <ul class="text-gray-700">
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Трофические язвы при варикозе
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Посттромбофлебическая болезнь
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Сосудистые звёздочки
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Тромбофлебит (воспаление)
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group hover:text-blue-600">
+            <a href="#">Пациентам</a>
+            <div
+              class="absolute left-0 top-full hidden group-hover:block bg-white border rounded-lg shadow-lg mt-2 z-10 w-48"
+            >
+              <ul class="text-gray-700">
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Подготовка к операции при варикозе
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Удаление вен лазером
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Как выбрать компрессионный трикотаж
+                </li>
+                <li class="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                  Способы лечения варикоза
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hover:text-blue-600">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="hover:text-blue-600"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>
