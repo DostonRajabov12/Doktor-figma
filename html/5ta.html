@@ -3,28 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind CSS Example</title>
-  <link rel="stylesheet" href="../src/output.css">
+  <title>Трофические язвы</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-color-hero-pattern  flex  justify-center min-h-screen bg-gradient-to-r  ">
-   
-  <div class="relative rounded-lg shadow-lg p-8 w-full max-w-3xl ">
-    <!-- Hujjatning asosiy matni -->
-    <h1 class="text-xl md:text-2xl font-bold text-blue-600 mb-4">
-      ХИРУРГИЧЕСКОЕ ЛЕЧЕНИЕ ТРОФИЧЕСКИХ ЯЗВ <br>
-      ПРИ ВАРИКОЗНОМ РАСШИРЕНИИ ВЕН
-    </h1>
-    <p class="text-gray-700 mb-6">
-      операции проводятся амбулаторно – можно <br>
-      выйти на работу через 1–2 дня
-    </p>
-    <!-- Tugma -->
-    <button class="bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 shadow-md">
-      Записаться через Продакторов
-    </button>
-    <!-- Orqa fon krestlar -->
-    
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header Section -->
+  <div class=" from-blue-500 to-blue-300 text-white py-12 px-4 bg-[url(../assets/BG.png)] bg-cover bg-center  h-[400px]">
+    <div class="container max-w-full sm:max-w-[900px] md:max-w-[1200px] mx-auto">
+      <h1 class="text-3xl sm:text-2xl md:text-4xl font-bold mb-4 text-blue-600">
+        ХИРУРГИЧЕСКОЕ ЛЕЧЕНИЕ ТРОФИЧЕСКИХ ЯЗВ ПРИ ВАРИКОЗНОМ РАСШИРЕНИИ ВЕН
+      </h1>
+      <p class="text-lg sm:text-base md:text-xl text-black">
+        операции проводятся с обезболиванием – можно выйти на работу через 1-2 дня
+      </p>
+      <button class="mt-6 px-8 py-3 bg-[#FB9CBC] text-white font-semibold rounded-[50px] shadow-md hover:bg-red-950">
+        Записаться на консультацию
+      </button>
+    </div>
   </div>
+
+  <!-- Main Section -->
+  <div class="container max-w-full sm:max-w-[900px] md:max-w-[1200px] mx-auto px-4 py-10">
+    <!-- First Content Block -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">
+        ТРОФИЧЕСКИЕ ЯЗВЫ ПРИ ВАРИКОЗНОЙ БОЛЕЗНИ
+      </h2>
+      <p class="text-gray-600">
+        осложнение, которое возникает на самых поздних стадиях варикоза и проявляется образованием длительно незаживающей раны на голени. Обычно они очень плохо поддаются лечению заживляющими мазями, пока не будет устранена их основная причина.
+      </p>
+      <p class="text-gray-600 mt-4">
+        Пройдите комплексное лечение варикозных трофических язв – подготовлю вас к операции, удалю патологически измененные участки вен и прослежу за тем, чтобы эти меры привели к полному исчезновению очага болезни. Вы сможете вернуться к привычной жизни всего через 1–2 дня после процедуры: использую современные малоинвазивные методики – ЭВЛК, минифлебэктомию и склеротерапию под контролем УЗИ.
+      </p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <!-- Card 1 -->
+      <div class="bg-[#3575DE] rounded-lg shadow-md p-6">
+        <div class="text-blue-600 text-4xl mb-4">👨‍⚕️</div>
+        <h3 class="text-[#FFE4A1] text-xl font-semibold mb-2">КОНСУЛЬТАЦИЯ</h3>
+        <p class="text-white">
+          Нужна предварительная консультация и диагностика, чтобы определить подходящие методы консервативного и хирургического решения ран и трофических язв.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#3575DE] rounded-lg shadow-md p-6">
+        <div class="text-blue-600 text-4xl mb-4">⏳</div>
+        <h3 class="text-[#FFE4A1] text-xl font-semibold mb-2">ДЛИТЕЛЬНОСТЬ</h3>
+        <p class="text-white">
+          Процедура обычно занимает 1 неделю — зависит от системы лечения. Основная операция под местным обезболиванием за 20–40 минут.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#3575DE] rounded-lg shadow-md p-6">
+        <div class="text-blue-600 text-4xl mb-4">🦵</div>
+        <h3 class="text-[#FFE4A1] text-xl font-semibold mb-2">РЕАБИЛИТАЦИЯ</h3>
+        <p class="text-white">
+          Спустя 1–2 дня можно выйти на работу, на 2–4 недели назначается компрессионный трикотаж.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-[#3575DE] rounded-lg shadow-md p-6">
+        <div class="text-blue-600 text-4xl mb-4">💰</div>
+        <h3 class="text-[#FFE4A1] text-xl font-semibold mb-2">СТОИМОСТЬ</h3>
+        <p class="text-white">
+          Цена лечения трофических язв рассчитывается индивидуально: от 50 000 до 150 000 руб. зависит от требуемой процедуры и материалов.
+        </p>
+      </div>
+    </div>
+
+    <!-- Indications Section -->
+    <div class="rounded-lg p-6 mb-10">
+      <h2 class="text-xl font-bold text-gray-800 mb-4">
+        ПОКАЗАНИЯ И ПРОТИВОПОКАЗАНИЯ К УДАЛЕНИЮ ВАРИКОЗНЫХ ВЕН
+      </h2>
+      <p class="text-gray-700">
+        Правильное лечение трофических язв – база, исключающая опасные «чисто текстовые» язвы. Чтобы устранить причину, врач должен провести подробное обследование, а затем выбрать современные малоинвазивные методы, которые устраняют сосудистую болезнь.
+      </p>
+      <button class="text-left mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-[20px] shadow-md hover:bg-blue-700 w-full sm:w-[1100px]">
+        Начать хирургическое лечение
+      </button>
+      <ul class="list-disc list-inside mt-10 ">
+        <li>беременность и кормление грудью;</li>
+        <li>острый тромбоз или тромбофлебит;</li>
+        <li>недавний инсульт или инфаркт;</li>
+        <li>декомпенсированный сахарный диабет;</li>
+        <li>декомпенсированные нарушения свертываемости крови;</li>
+        <li>тяжелая форма атеросклероза сосудов ног.</li>
+      </ul>
+    </div>
+
+    <!-- Final Process Section -->
+    <div>
+      <h2 class="font-bold mb-6 text-3xl sm:text-2xl md: ml-7">
+        ЛЕЧЕНИЕ ТРОФИЧЕСКИХ ЯЗВ ПРИ ВАРИКОЗЕ ЗАЙМЕТ ОТ 2 НЕДЕЛЬ ДО 4-6 МЕСЯЦЕВ
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Подготовка пациента</h3>
+          <p class="text-gray-600">
+            Диагностика вен и подготовительные меры занимают всего 1-2 дня.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Хирургическое вмешательство</h3>
+          <p class="text-gray-600">
+            Удаление поврежденных вен проводится быстро, с минимальными рисками.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Контрольный осмотр</h3>
+          <p class="text-gray-600">
+            Регулярные осмотры для профилактики рецидива и контроля результата.
+          </p>
+        </div>
+        <div class="container mx-auto px-4 py-10 w-full sm:w-[1200px]">
+          <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl">РЕЗУЛЬТАТЫ ЛАЗЕРНОЙ КОАГУЛЯЦИИ ВЕН: ФОТОГРАФИИ ДО И ПОСЛЕ ПРОЦЕДУРЫ</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 1" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 2" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 3" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 4" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 5" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 6" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 7" class="w-full h-auto object-cover">
+              <img src="../assets/Карточка 1.png" alt="Before and After Image 8" class="w-full h-auto object-cover">
+            </div>
+          </div>
+        
+          <div class="container mx-auto px-4 py-10">
+            <div class="text-center mb-6">
+              <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold">
+                ОТЗЫВЫ МОИХ ПАЦИЕНТОВ
+              </h2>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
+                Смотреть все отзывы
+              </button>
+              <button class="border border-blue-500 text-blue-500 px-4 py-2 rounded-full hover:bg-blue-100">
+                Оставить свой отзыв
+              </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">ОЛЬГА ВЯЧЕСЛАВОВНА</h3>
+                <p class="text-gray-600 text-sm">Обратилась с варикозом, беспокоила боль в ноге и тяжесть...</p>
+              </div>
+              <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">ЕЛЕНА ВЛАДИМИРОВНА</h3>
+                <p class="text-gray-600 text-sm">На мой взгляд, Астафьева Евгения Валерьевна — отличный врач...</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold">ПОЛЕЗНЫЕ СТАТЬИ НА ТЕМУ ВАРИКОЗНАЯ БОЛЕЗНЬ</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="../assets/Фото 2.png" alt="Article Image 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2">ОТКУДА БЕРЁТСЯ ВАРИКОЗ...</h3>
+                <p class="text-gray-600 text-sm mb-4">Варикозная болезнь вен...</p>
+                <p class="text-gray-500 text-sm">13 января 2024</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="../assets/Фото 2.png" alt="Article Image 2" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2">УДАЛЕНИЕ ВЕН ЛАЗЕРОМ...</h3>
+                <p class="text-gray-600 text-sm mb-4">Периодически у меня бывают...</p>
+                <p class="text-gray-500 text-sm">02 ноября 2023</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="../assets/Фото 2.png" alt="Article Image 3" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2">КАК ВЫБРАТЬ КОМПРЕССИОННЫЙ...</h3>
+                <p class="text-gray-600 text-sm mb-4">Когда возникает необходимость...</p>
+                <p class="text-gray-500 text-sm">28 октября 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+    </div>
+  </div>
+
+
 </body>
 </html>
