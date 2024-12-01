@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maqolalar Sahifasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<<<<<<< HEAD
+
+<body class="bg-gray-50">
  
     <div class="max-w-7xl mx-auto py-6">
       <header
@@ -124,45 +124,57 @@ class="absolute left-0 top-full hidden group-hover:block bg-white border rounded
   </body>
 </html>
   
-=======
->>>>>>> 51416fea01ae64311515307e04038b75c487041b
-    <div class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-          <h2 class="text-blue-600 text-2xl font-bold mb-4 text-center">ОСТАВИТЬ ЗАЯВКУ</h2>
-          <p class="text-gray-700 text-center mb-6">Заполните простую форму и я свяжусь с Вами</p>
-      
-          <form action="#" method="POST" class="space-y-4">
-            <input
-              type="text"
-              placeholder="Ваше имя"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="email"
-              placeholder="Ваш e-mail"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="tel"
-              placeholder="Ваш телефон"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors"
-            >
-              Отправить
-            </button>
-          </form>
-      
-          <p class="text-gray-500 text-xs mt-4 text-center">
-            Нажимая на кнопку, Вы даёте согласие на обработку персональных данных
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">Статьи</h1>
+    
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="text-gray-600">Сортировать:</span>
+      <button class="text-blue-600 border-b-2 border-blue-600 pb-1 focus:outline-none">От новых к старым</button>
+      <button class="text-gray-600 hover:text-blue-600 focus:outline-none">От старых к новым</button>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="/IMAGE/Фото 1.png" alt="Rasm">
+        <div class="p-4">
+          <h2 class="font-bold text-lg mb-2">Откуда берется боль в ногах...</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            Узнайте, почему ноги могут болеть, и как избавиться от этой проблемы. Основные причины и рекомендации врачей...
           </p>
+          <span class="text-sm text-gray-500">17 июля 2022</span>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-      
->>>>>>> 51416fea01ae64311515307e04038b75c487041b
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="/IMAGE/Фото 2.png" alt="Rasm">
+        <div class="p-4">
+          <h2 class="font-bold text-lg mb-2">Удалить вены лазером...</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            Технологии удаления варикоза шагнули далеко вперед. Читайте о процедурах и их особенностях.
+          </p>
+          <span class="text-sm text-gray-500">12 октября 2022</span>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="/IMAGE/Фото 3.png" alt="Rasm">
+        <div class="p-4">
+          <h2 class="font-bold text-lg mb-2">Как выбрать компрессионные...</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            Подробное руководство по выбору и использованию компрессионных чулков для здоровья.
+          </p>
+          <span class="text-sm text-gray-500">30 октября 2022</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center mt-8">
+      <button class="px-4 py-2 mx-1 text-gray-600 bg-white border rounded-md hover:bg-gray-100">1</button>
+      <button class="px-4 py-2 mx-1 text-blue-600 bg-white border border-blue-600 rounded-md hover:bg-blue-50">2</button>
+      <button class="px-4 py-2 mx-1 text-gray-600 bg-white border rounded-md hover:bg-gray-100">3</button>
+      <span class="px-4 py-2 mx-1 text-gray-500">...</span>
+      <button class="px-4 py-2 mx-1 text-gray-600 bg-white border rounded-md hover:bg-gray-100">20</button>
+    </div>
+  </div>
 </body>
 </html>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<<<<<<< HEAD
  
     <div class="max-w-7xl mx-auto py-6">
       <header
@@ -123,46 +123,70 @@ class="absolute left-0 top-full hidden group-hover:block bg-white border rounded
     </div>
   </body>
 </html>
-  
-=======
->>>>>>> 51416fea01ae64311515307e04038b75c487041b
-    <div class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-          <h2 class="text-blue-600 text-2xl font-bold mb-4 text-center">ОСТАВИТЬ ЗАЯВКУ</h2>
-          <p class="text-gray-700 text-center mb-6">Заполните простую форму и я свяжусь с Вами</p>
-      
-          <form action="#" method="POST" class="space-y-4">
-            <input
-              type="text"
-              placeholder="Ваше имя"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="email"
-              placeholder="Ваш e-mail"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="tel"
-              placeholder="Ваш телефон"
-              class="w-full p-3 border border-blue-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors"
-            >
-              Отправить
-            </button>
-          </form>
-      
-          <p class="text-gray-500 text-xs mt-4 text-center">
-            Нажимая на кнопку, Вы даёте согласие на обработку персональных данных
-          </p>
+    
+    <div class="max-w-5xl mx-auto p-4 md:p-8 lg:p-12">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 leading-tight mb-6 text-center">
+            Часто задаваемые вопросы о варикозе, его лечении и операциях <br /> в амбулаторной хирургии
+        </h1>
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+            Рады приветствовать вас в разделе «Вопрос-Ответ». Тут вы найдёте ответы на вопросы, которые мне задают чаще
+            всего. Читайте интересующую информацию по варикозу, амбулаторной хирургии и общим медицинским проблемам.
+            Если вопрос здесь нет – не заживайте его и обязательно ответим в течение 1-2 дней. Мы предлагаем
+            профессиональную консультацию – полное обследование хирургии и флеболога, работаю с амбулаторном более 15
+            лет. Подробнее об этом ниже можете узнать.
+        </p>
+
+        <div class="space-y-6">
+            <div class="bg-white border border-blue-300 p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg md:text-xl font-semibold text-blue-500 mb-4">
+                    Вопросы по варикозу, его лечению и восстановлению после операции
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base">
+                    Здесь будет информация о лечении варикоза и восстановлении после операции.
+                </p>
+            </div>
+
+            <div class="bg-white border border-blue-300 p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg md:text-xl font-semibold text-blue-500 mb-4">
+                    Оперативные вмешательства в амбулаторной хирургии
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base">
+                    Здесь можно будет узнать о процедуре оперативного вмешательства и других деталях.
+                </p>
+            </div>
+
+            <div class="bg-white border border-blue-300 p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg md:text-xl font-semibold text-blue-500 mb-4">
+                    Общие вопросы по лечению варикоза и хирургическим вмешательствам
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base">
+                    В этом разделе находятся общие вопросы, касающиеся лечения варикоза и хирургии.
+                </p>
+            </div>
         </div>
-      </div>
-<<<<<<< HEAD
-=======
-      
->>>>>>> 51416fea01ae64311515307e04038b75c487041b
+    </div>
+    <div class="max-w-4xl mx-auto p-6 md:p-12 bg-white shadow-lg rounded-lg">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Задать Вопрос</h2>
+        <p class="text-gray-600 mb-6">
+            Для того чтобы оставить отзыв обо мне, нужно заполнить небольшую форму ниже, это займет у Вас не более 60 секунд. После модерации, не содержащие спамы отзывы, Ваш отзыв появится на этой странице (при желании можете прикрепить фотографии отзыва). Спасибо за уделенное время!
+        </p>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="md:col-span-2">
+                <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    rows="4" placeholder="Задайте вопрос или оставьте комментарий"></textarea>
+            </div>
+            <input type="text" placeholder="Ваше имя"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="email" placeholder="Ваш email"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="text" placeholder="Ваш телефон"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button type="submit"
+                class="w-full md:col-span-2 p-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Отправить
+            </button>
+        </form>
+    </div>
 </body>
 </html>
